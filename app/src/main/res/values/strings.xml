@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IHM</string>
+    <string name="Enter_Code_Text">Enter a code pin</string>
+    <string name="copy" translatable="false">Created By Aymen - Islam</string>
 </resources>

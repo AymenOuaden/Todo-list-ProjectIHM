@@ -8,20 +8,23 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class CreateCodePin extends AppCompatActivity {
 
-    Button btn_num_1,btn_num_2,btn_num_3,btn_num_4,btn_num_5,btn_num_6,btn_num_7,btn_num_8,btn_num_9, btn_num_0;
-    Button first_pin, second_pin, thirth_pin, fourth_pin, btn_delete;
-    int co=0;
-    String code_pin_s="";
-    int code_pin;
+    Button btn_num_1, btn_num_2, btn_num_3, btn_num_4, btn_num_5, btn_num_6, btn_num_7, btn_num_8, btn_num_9, btn_num_0;
+    Button first_pin, second_pin, thirth_pin, fourth_pin, btn_delete, btn_validate;
+    int co = 0;
+    TextView output_code_pin, msg_show;
+    String code_pin_s = "";
+    int code_pin_1 = 0, code_pin_2 = 0;
     SharedPrefrences sharedPrefrences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_create_code_pin);
         sharedPrefrences = new SharedPrefrences(getApplicationContext());
         btn_num_0 = findViewById(R.id.button_0);
         btn_num_1 = findViewById(R.id.button_1);
@@ -38,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
         thirth_pin = findViewById(R.id.third_pin);
         fourth_pin = findViewById(R.id.fourth_pin);
         btn_delete = findViewById(R.id.btn_delete);
-
+        btn_validate = findViewById(R.id.btn_validate);
+        output_code_pin = findViewById(R.id.output_code_pin);
+        msg_show = findViewById(R.id.msg_show);
         btn_num_0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                     code_pin_s += "1";
                     changeBackButtonPin("fill");
                 }
-                if (co==4)
+                if (co == 4)
                     checkCodePin();
             }
         });
@@ -71,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     code_pin_s += "2";
                     changeBackButtonPin("fill");
                 }
-                if (co==4)
+                if (co == 4)
                     checkCodePin();
             }
         });
@@ -83,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                     code_pin_s += "3";
                     changeBackButtonPin("fill");
                 }
-                if (co==4)
+                if (co == 4)
                     checkCodePin();
             }
         });
@@ -95,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     code_pin_s += "4";
                     changeBackButtonPin("fill");
                 }
-                if (co==4)
+                if (co == 4)
                     checkCodePin();
             }
         });
@@ -107,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                     code_pin_s += "5";
                     changeBackButtonPin("fill");
                 }
-                if (co==4)
+                if (co == 4)
                     checkCodePin();
             }
         });
@@ -119,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                     code_pin_s += "6";
                     changeBackButtonPin("fill");
                 }
-                if (co==4)
+                if (co == 4)
                     checkCodePin();
             }
         });
@@ -131,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
                     code_pin_s += "7";
                     changeBackButtonPin("fill");
                 }
-                if (co==4)
+                if (co == 4)
                     checkCodePin();
             }
         });
@@ -143,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
                     code_pin_s += "8";
                     changeBackButtonPin("fill");
                 }
-                if (co==4)
+                if (co == 4)
                     checkCodePin();
             }
         });
@@ -155,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                     code_pin_s += "9";
                     changeBackButtonPin("fill");
                 }
-                if (co==4)
+                if (co == 4)
                     checkCodePin();
             }
         });
@@ -170,10 +175,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        btn_validate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToNext();
+            }
+        });
     }
 
     private void changeBackButtonPin(String operation) {
-        switch (co){
+        switch (co) {
             case 1:
                 if (operation.equals("fill"))
                     first_pin.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.Secondary));
@@ -199,21 +210,35 @@ public class MainActivity extends AppCompatActivity {
                     fourth_pin.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.Gray));
                 break;
             default:
-                Log.w("Pin number","The pin number is out of range");
+                Log.w("Pin number", "The pin number is out of range");
         }
-    }
-    private void checkCodePin(){
-        if (Integer.parseInt(code_pin_s) == sharedPrefrences.getCodePin()) {
-            code_pin = Integer.parseInt(code_pin_s);
-            goToDashboard();
-        }
-        else
-            toastShort(getResources().getString(R.string.wrong_pin));
     }
 
-    private void goToDashboard() {
-        Intent intent = new Intent(this, Dashboard.class);
-        intent.putExtra("code_pin", code_pin);
+    private void checkCodePin() {
+        if (code_pin_1 == 0) {
+            code_pin_1 = Integer.parseInt(code_pin_s);
+            while (co > 0) {
+                changeBackButtonPin("empty");
+                co--;
+            }
+            output_code_pin.setText(getResources().getString(R.string.confirm_pin));
+            code_pin_s = "";
+        } else {
+            if (Integer.parseInt(code_pin_s) == code_pin_1) {
+                msg_show.setText(getResources().getString(R.string.code_the_same));
+                msg_show.setVisibility(View.VISIBLE);
+                btn_validate.setVisibility(View.VISIBLE);
+                code_pin_2 = code_pin_1;
+                btn_delete.setVisibility(View.INVISIBLE);
+            } else
+                toastShort(getResources().getString(R.string.codes_not_the_same));
+        }
+    }
+
+    private void goToNext() {
+        sharedPrefrences.setCodePin(code_pin_1);
+        sharedPrefrences.setIsRequieredPin(true);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 

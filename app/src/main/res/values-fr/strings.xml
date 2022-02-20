@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">IHM</string>
     <string name="Enter_Code_Text">Entrer un code pin</string>
+    <string name="wrong_pin">Le code pin est faux</string>
+    <string name="manage_text">Manager Vos Activités avec AI TODO List</string>
+    <string name="manage_text_2">"Lorsque vous êtes submergé par la quantité de travail que vous avez dans votre assiette, arrêtez-vous et repensez... "</string>
+    <string name="next">Suivant</string>
+    <string name="leave">Quitter</string>
+    <string name="validate">Valider</string>
+    <string name="codes_not_the_same">"Les codes pin ne sont pas identiques "</string>
+    <string name="confirm_pin">Confirmer le code pin</string>
+    <string name="code_the_same">Les code sont identiques</string>
+    <string name="create_code_pin">Creer votre code pin</string>
 </resources>

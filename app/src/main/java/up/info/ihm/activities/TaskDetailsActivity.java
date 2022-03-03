@@ -1,4 +1,4 @@
-package up.info.ihm.Activities;
+package up.info.ihm.activities;
 
 import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
@@ -19,6 +19,7 @@ import java.util.Date;
 import up.info.ihm.R;
 import up.info.ihm.db.SQLiteDB;
 import up.info.ihm.models.Task;
+import up.info.ihm.sharedPreferences.SharedPrefrences;
 
 public class TaskDetailsActivity extends AppCompatActivity {
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Gray"
-    tools:context=".Activities.ParametresCodePin">
+    tools:context=".activities.ParametresCodePin">
 
     <TextView
         android:id="@+id/label_parametres_code_pin"

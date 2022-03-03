@@ -1,4 +1,4 @@
-package up.info.ihm.Activities;
+package up.info.ihm.sharedPreferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -14,43 +14,43 @@ public class SharedPrefrences {
         sharedPreferences = applicationContext.getSharedPreferences(sharedPreferencesS, Context.MODE_PRIVATE);
     }
 
-    void setCodePin(Integer code_pin) {
+    public void setCodePin(Integer code_pin) {
         sharedPreferences.edit().putInt("code_pin", code_pin).apply();
     }
 
-    int getCodePin() {
+    public int getCodePin() {
         return sharedPreferences.getInt("code_pin", 99999);
     }
 
-    void setIsRequieredPin(boolean requieredPin) {
+    public void setIsRequieredPin(boolean requieredPin) {
         sharedPreferences.edit().putBoolean("requieredPin", requieredPin).apply();
     }
 
-    boolean isRequieredPin() {
+    public boolean isRequieredPin() {
         return sharedPreferences.getBoolean("requieredPin", true);
     }
 
-    void setCodePinOperation() {
+    public void setCodePinOperation() {
         sharedPreferences.edit().putString("codePinOperation", "updatePinCode").apply();
     }
 
-    String getCodePinOperation() {
+    public String getCodePinOperation() {
         return sharedPreferences.getString("codePinOperation", "createCodePin");
     }
 
-    void setAppLanguage(String language) {
+    public void setAppLanguage(String language) {
         sharedPreferences.edit().putString("language", language).apply();
     }
 
-    String getAppLanguage() {
+    public String getAppLanguage() {
         return sharedPreferences.getString("language", Locale.getDefault().getLanguage());
     }
 
-    void setMode(String mode) {
+    public void setMode(String mode) {
         sharedPreferences.edit().putString("mode", mode).apply();
     }
 
-    String getMode() {
+    public String getMode() {
         return sharedPreferences.getString("mode", "light");
     }
 

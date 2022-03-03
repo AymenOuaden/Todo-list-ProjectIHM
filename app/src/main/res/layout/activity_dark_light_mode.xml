@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Gray"
-    tools:context=".Activities.DarkLightMode">
+    tools:context=".activities.DarkLightMode">
 
     <TextView
         android:id="@+id/textView56"

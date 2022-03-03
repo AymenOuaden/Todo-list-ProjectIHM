@@ -1,4 +1,4 @@
-package up.info.ihm.Activities;
+package up.info.ihm.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,6 +30,7 @@ import up.info.ihm.fragments.ShcoolFragment;
 import up.info.ihm.fragments.ShoppingFragment;
 import up.info.ihm.fragments.SportFragment;
 import up.info.ihm.models.Task;
+import up.info.ihm.sharedPreferences.SharedPrefrences;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

@@ -1,4 +1,4 @@
-package up.info.ihm.Activities;
+package up.info.ihm.activities;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 import java.util.Locale;
 
 import up.info.ihm.R;
+import up.info.ihm.sharedPreferences.SharedPrefrences;
 
 public class WelcomeScreen extends AppCompatActivity {
     SharedPrefrences sharedPrefrences;

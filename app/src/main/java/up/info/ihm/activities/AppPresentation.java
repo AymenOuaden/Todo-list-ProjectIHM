@@ -1,4 +1,4 @@
-package up.info.ihm.Activities;
+package up.info.ihm.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;

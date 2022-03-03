@@ -1,4 +1,4 @@
-package up.info.ihm.Activities;
+package up.info.ihm.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import up.info.ihm.R;
+import up.info.ihm.sharedPreferences.SharedPrefrences;
 
 public class ParametresCodePin extends AppCompatActivity {
     Button btn_change_code_pin;

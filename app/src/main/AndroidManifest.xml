@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activities.WelcomeScreen"
+            android:name=".activities.WelcomeScreen"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,25 +18,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.DarkLightMode" />
-        <activity android:name=".Activities.ParametresLanguage" />
-        <activity android:name=".Activities.ParametresCodePin" />
-        <activity android:name=".Activities.Parametres" />
+        <activity android:name=".activities.DarkLightMode" />
+        <activity android:name=".activities.ParametresLanguage" />
+        <activity android:name=".activities.ParametresCodePin" />
+        <activity android:name=".activities.Parametres" />
         <activity
-            android:name=".Activities.CreateCodePin"
+            android:name=".activities.CreateCodePin"
             android:noHistory="true" />
         <activity
-            android:name=".Activities.AppPresentation"
+            android:name=".activities.AppPresentation"
             android:noHistory="true" />
         <activity
-            android:name=".Activities.Login"
+            android:name=".activities.Login"
             android:noHistory="true" />
         <activity
-            android:name=".Activities.AddTaskActivity"
+            android:name=".activities.AddTaskActivity"
             android:theme="@style/TaskDetails" />
         <activity
-            android:name=".Activities.TaskDetailsActivity"
+            android:name=".activities.TaskDetailsActivity"
             android:theme="@style/TaskDetails" />
-        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".activities.MainActivity" />
     </application>
 </manifest>

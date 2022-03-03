@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/Gray"
     android:foregroundTint="@color/Gray"
-    tools:context=".Activities.Login">
+    tools:context=".activities.Login">
 
     <TextView
         android:id="@+id/output_code_pin"

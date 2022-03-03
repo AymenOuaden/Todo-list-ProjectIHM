@@ -1,4 +1,4 @@
-package up.info.ihm.Activities;
+package up.info.ihm.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import up.info.ihm.R;
+import up.info.ihm.sharedPreferences.SharedPrefrences;
 
 public class DarkLightMode extends AppCompatActivity {
     RadioButton btn_light, btn_dark;

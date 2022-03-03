@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import up.info.ihm.Activities.TaskDetailsActivity;
+import up.info.ihm.activities.TaskDetailsActivity;
 import up.info.ihm.R;
 import up.info.ihm.adapters.TaskAdapter;
 import up.info.ihm.db.SQLiteDB;

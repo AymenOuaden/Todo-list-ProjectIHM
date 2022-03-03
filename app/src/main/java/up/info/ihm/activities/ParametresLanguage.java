@@ -1,4 +1,4 @@
-package up.info.ihm.Activities;
+package up.info.ihm.activities;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Locale;
 
 import up.info.ihm.R;
+import up.info.ihm.sharedPreferences.SharedPrefrences;
 
 public class ParametresLanguage extends AppCompatActivity {
     RadioButton btn_french, btn_english;

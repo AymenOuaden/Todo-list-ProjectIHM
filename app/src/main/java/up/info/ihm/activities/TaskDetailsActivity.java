@@ -93,14 +93,12 @@ public class TaskDetailsActivity extends AppCompatActivity {
 
             StartingDate = StartingDateTextView.getText().toString();
             EndingDate = EndingDateTextView.getText().toString();
-            SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-            //dateFormat.setLenient(false);
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-dd-MM HH:mm:ss");
             if (!StartingDate.equals("none")) {
                 try {
                     Sdate = dateFormat.parse(StartingDate.trim());
                 } catch (ParseException pe) {
                     toast(getString(R.string.toast_msg1));
-                    Log.d("helo", "compare: old " + this.toString());
                     return;
                 }
             }

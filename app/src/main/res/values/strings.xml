@@ -61,7 +61,7 @@
     <string name="highPriority">high</string>
     <string name="mediumPriority">medium</string>
     <string name="lowPriority">low</string>
-    <string name="toast_msg1">il faut respecter le format dd-MM-yyyy HH:mm:ss</string>
+    <string name="toast_msg1">il faut respecter le format yyyy-dd-MM HH:mm:ss</string>
     <string name="toast_msg2">veuillez sélectionner la priorité (haut, moyen, faible</string>
     <string name="toast_msg3"> aucune modification</string>
     <string name="toast_msg4"> modification réussie </string>

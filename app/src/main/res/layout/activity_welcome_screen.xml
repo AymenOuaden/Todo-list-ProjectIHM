@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Gray"
-    tools:context=".WelcomeScreen">
+    tools:context=".Activities.WelcomeScreen">
 
     <ImageView
         android:id="@+id/imageView"
@@ -16,7 +16,8 @@
         app:layout_constraintBottom_toTopOf="@+id/app_name_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/app_name" />
 
     <TextView
         android:id="@+id/app_name_text"

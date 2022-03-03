@@ -1,11 +1,12 @@
-package up.info.ihm;
+package up.info.ihm.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import up.info.ihm.R;
 
 public class AppPresentation extends AppCompatActivity {
     Button btn_next, btn_leave;
@@ -36,9 +37,7 @@ public class AppPresentation extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     public void exitApp() {
         finish();
     }
-
 }

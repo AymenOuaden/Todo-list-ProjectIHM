@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_today"
+            android:title="@string/all"
+            android:icon="@drawable/calainder" />
+        <item
+            android:id="@+id/nav_personnel"
+            android:title="@string/personal"
+            android:icon="@drawable/personnel" />
+        <item
+            android:id="@+id/nav_shopping"
+            android:title="@string/shooping"
+            android:icon="@drawable/courses" />
+        <item
+            android:id="@+id/nav_shcool"
+            android:title="@string/study"
+            android:icon="@drawable/etude" />
+        <item
+            android:id="@+id/nav_sport"
+            android:title="@string/sport"
+            android:icon="@drawable/sport" />
+        <item
+            android:id="@+id/nav_other"
+            android:title="@string/other"
+            android:icon="@drawable/autre" />
+
+    </group>
+</menu>

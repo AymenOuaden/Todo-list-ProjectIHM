@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">AI Todo</string>
     <string name="Enter_Code_Text">Enter a code pin</string>
-    <string name="copy" translatable="false">Created By Aymen - Islam</string>
+    <string name="copy">Created By Aymen - Islem</string>
     <string name="wrong_pin">Pin code is wrong</string>
     <string name="manage_text">Manage Your Activities with AI TODO List</string>
     <string name="manage_text_2">When you are overwhelmed by the amount of work ou have on your plate, stop and rethink...</string>
@@ -12,4 +12,61 @@
     <string name="confirm_pin">Confirm your code pin</string>
     <string name="code_the_same">The codes match</string>
     <string name="create_code_pin">Create your code pin</string>
+    <string name="name">Name</string>
+    <string name="description" translatable="false">Description</string>
+    <string name="date_start">Start Date</string>
+    <string name="date_end">End Date</string>
+    <string name="category">Category</string>
+    <string name="priority">Priority</string>
+    <string name="personal">Personal</string>
+    <string name="sport" translatable="false">Sport</string>
+    <string name="study">Study</string>
+    <string name="shooping">Shooping</string>
+    <string name="other">Other</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="start_time" translatable="false">Start Time</string>
+    <string name="end_time" translatable="false">End time</string>
+    <string name="nav_open" translatable="false">Open</string>
+    <string name="nav_close" translatable="false">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="code_pin">Pin Code</string>
+    <string name="mode" translatable="false">Mode</string>
+    <string name="dark" translatable="false">Dark</string>
+    <string name="light" translatable="false">Light</string>
+    <string name="notifications" translatable="false">Notifications</string>
+    <string name="sound">Sound</string>
+    <string name="code_pin_settings">Pin Code Settings</string>
+    <string name="code_pin_requierd">Required Pin Code</string>
+    <string name="modify_code_pin">Modify Pin Code</string>
+    <string name="french">French</string>
+    <string name="english">English</string>
+    <string name="all_activities">All Activities</string>
+    <string name="completed_state">Done</string>
+    <string name="doing_state">Doing</string>
+    <string name="notStarted_state">Non Started</string>
+    <string name="late_state">Late</string>
+    <string name="none_state">Non</string>
+    <string name="state">State</string>
+    <string name="filtred_by">Filtred by</string>
+    <string name="all">All</string>
+    <string name="add_task">Add Task</string>
+    <string name="update">Update</string>
+
+
+    <string name="highPriority">high</string>
+    <string name="mediumPriority">medium</string>
+    <string name="lowPriority">low</string>
+    <string name="toast_msg1">il faut respecter le format dd-MM-yyyy HH:mm:ss</string>
+    <string name="toast_msg2">veuillez sélectionner la priorité (haut, moyen, faible</string>
+    <string name="toast_msg3"> aucune modification</string>
+    <string name="toast_msg4"> modification réussie </string>
+    <string name="toast_msg5"> impossible de modifier la tâche</string>
+    <string name="toast_msg6"> erreur tâche non trouver</string>
+
+
 </resources>

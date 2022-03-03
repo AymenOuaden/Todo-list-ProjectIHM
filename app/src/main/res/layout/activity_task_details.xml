@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TaskDetailsActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/id_btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/Primary"
+            android:onClick="updateButtonOnClick"
+            android:text="@string/update"
+            android:textColor="@color/Gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_taskDescription" />
+
+        <TextView
+            android:id="@+id/text_description__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/description"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_task_satet_title"
+            app:layout_constraintTop_toBottomOf="@+id/id_task_priority" />
+
+        <EditText
+            android:id="@+id/id_taskDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text_description__title"
+            app:layout_constraintTop_toBottomOf="@+id/text_description__title"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/text_task_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/id_taskName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_task_name_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_task_name_title"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/text_date_start_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/date_start"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/id_taskName"
+            app:layout_constraintTop_toBottomOf="@+id/id_taskName" />
+
+        <EditText
+            android:id="@+id/id_task_date_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_date_start_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_date_start_title"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/text_date_finish_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/date_end"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_date_start_title"
+            app:layout_constraintTop_toBottomOf="@+id/id_task_date_start" />
+
+        <EditText
+            android:id="@+id/id_task_date_finish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/id_task_date_start"
+            app:layout_constraintTop_toBottomOf="@+id/text_date_finish_title"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/text_task_satet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/priority"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_date_finish_title"
+            app:layout_constraintTop_toBottomOf="@+id/id_task_date_finish" />
+
+        <EditText
+            android:id="@+id/id_task_priority"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/id_task_date_finish"
+            app:layout_constraintTop_toBottomOf="@+id/text_task_satet_title"
+            android:background="@android:color/transparent"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor,TextFields" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

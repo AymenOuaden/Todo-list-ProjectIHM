@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/moreVertical"
+        android:icon="@drawable/filtre"
+        android:title="@string/filtred_by"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/id_all"
+                android:title="@string/all" />
+            <item
+                android:id="@+id/id_completed_filtre"
+                android:title="@string/completed_state" />
+            <item
+                android:id="@+id/id_notStated_filtre"
+                android:title="@string/notStarted_state" />
+            <item
+                android:id="@+id/id_Doing"
+                android:title="@string/doing_state" />
+            <item
+                android:id="@+id/id_lated"
+                android:title="@string/late_state" />
+
+        </menu>
+    </item>
+</menu>

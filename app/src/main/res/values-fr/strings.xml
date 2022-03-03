@@ -11,4 +11,49 @@
     <string name="confirm_pin">Confirmer le code pin</string>
     <string name="code_the_same">Les code sont identiques</string>
     <string name="create_code_pin">Creer votre code pin</string>
+    <string name="name">Nom</string>
+    <string name="date_start">Date de début</string>
+    <string name="date_end">Date de fin</string>
+    <string name="category">Catégorie</string>
+    <string name="priority">Priorité</string>
+    <string name="personal">Personnel</string>
+    <string name="study">Etude</string>
+    <string name="shooping">Courses</string>
+    <string name="other">Autre</string>
+    <string name="high">Haut</string>
+    <string name="medium">Moyen</string>
+    <string name="low">Bas</string>
+    <string name="settings">Paramètres</string>
+    <string name="language">Langue</string>
+    <string name="code_pin">Code Pin</string>
+    <string name="sound">Son</string>
+    <string name="code_pin_settings">Paramètres de code pin</string>
+    <string name="code_pin_requierd">Code Pin Obligatoire</string>
+    <string name="modify_code_pin">Modifier Le Code Pin</string>
+    <string name="french">Français</string>
+    <string name="english">Anglais</string>
+    <string name="all_activities">Tous les activités</string>
+    <string name="completed_state">Terminé</string>
+    <string name="doing_state">En Cours</string>
+    <string name="notStarted_state">Non Commencé</string>
+    <string name="late_state">En Retard</string>
+    <string name="none_state">Aucune</string>
+    <string name="state">Statut</string>
+    <string name="filtred_by">Filtré par</string>
+    <string name="copy" translatable="false">Creé par Aymen - Islem</string>
+    <string name="all">Tout</string>
+    <string name="add_task">Ajouter Task</string>
+    <string name="update">Modifier</string>
+
+    <string name="highPriority">haut</string>
+    <string name="mediumPriority">moyen</string>
+    <string name="lowPriority">bas</string>
+    <string name="toast_msg1">il faut respecter le format dd-MM-yyyy HH:mm:ss</string>
+    <string name="toast_msg2">veuillez sélectionner la priorité (haut, moyen, faible</string>
+    <string name="toast_msg3"> aucune modification</string>
+    <string name="toast_msg4"> modification réussie </string>
+    <string name="toast_msg5"> impossible de modifier la tâche</string>
+    <string name="toast_msg6"> erreur tâche non trouver</string>
+
+
 </resources>

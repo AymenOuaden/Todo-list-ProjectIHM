@@ -31,12 +31,12 @@ public class SQLiteDB extends SQLiteOpenHelper {
     }
 
     public void addDefaultTasksTest() {
-        if (countRaws() == 0) {
+        /*if (countRaws() == 0) {
             addTask(new Task("wraiting song", "By understanding the elements of songwriting, you can learn to write great songs that are moving and memorable", null, null, Task.Priority.MOYEN, Task.Categorie.PERSONNEL));
             addTask(new Task("IHM", "End of Ihm Project", new Date(), null, Task.Priority.MOYEN, Task.Categorie.ETUDE));
             updateTask(2, Task.State.TERMINE);
             addTask(new Task("Natation", "nat nat nat", null, new Date(), Task.Priority.HAUT, Task.Categorie.SPORT));
-        }
+        }*/
     }
 
     public void addTask(Task task) {
